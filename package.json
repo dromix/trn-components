@@ -2,7 +2,7 @@
   "name": "trn-components",
   "version": "0.1.0",
   "license": "MPL-2.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "get": "cdktf get",
     "build": "tsc",
