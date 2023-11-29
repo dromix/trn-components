@@ -37,7 +37,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Update package version
-        run: npm version prerelease --preid="$(date +'%y%m%d%H%M%S')". rc
+        run: npm version prerelease --preid=$(date +'%y%m%d%H%M%S').rc --no-git-tag-version
 
       - name: Publish to npm
         run: npm publish
